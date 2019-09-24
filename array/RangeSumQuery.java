@@ -4,6 +4,7 @@ package array;
  * Created by az on 9/23/2019.
  */
 public class RangeSumQuery {
+    //improvement: don't need extra space, use nums instead
     int[] count;
     public RangeSumQuery(int[] nums) {
         count = new int[nums.length];
