@@ -26,7 +26,7 @@ public class meetingRooms {
 
     //LC 253 medium - 494
     //M1: sort - using 【array】 to implement
-    //T : O(n) S : O(n)
+    //T : O(nlgn) S : O(n)
     //https://leetcode.com/problems/meeting-rooms-ii/discuss/67855/Explanation-of-%22Super-Easy-Java-Solution-Beats-98.8%22-from-%40pinkfloyda
     //easy and smart, hard to explain and understand
     public int minMeetingRooms1(int[][] intervals) {
@@ -47,7 +47,7 @@ public class meetingRooms {
         return rooms;
     }
 
-    //M2: sort - using 【PQ】 to implement
+    //M2: sweep line - using 【PQ】 to implement
     //T : O(nlogn) S : O(n)
     //https://leetcode.com/problems/meeting-rooms-ii/discuss/67857/AC-Java-solution-using-min-heap
     public int minMeetingRooms2(int[][] intervals) {
@@ -81,8 +81,10 @@ public class meetingRooms {
         return pq.size();
     }
 
-    //M2: Sweep Line
+    //M3: Sweep Line -- using 【Map】 to implement
     //T : O(nlgn) S : O(n);
+    //how to think : consider "sweep line" is array(treemap here), "event start" means + 1, "event close" means - 1,
+    //track how many event is in progress at the same time.
     public int minMeetingRooms3(int[][] intervals) {
         Map<Integer, Integer> record = new TreeMap<>();
         for (int[] interval : intervals) {

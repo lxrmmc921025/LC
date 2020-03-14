@@ -7,7 +7,7 @@ import java.util.List;
  * Created by az on 3/11/2020.
  */
 public class insertIntervals {
-    //LC 57 medium
+    //LC 57 hard
     //Sort
     //https://leetcode.com/problems/insert-interval/discuss/21602/Short-and-straight-forward-Java-solution
     //Important assumption : already sort
