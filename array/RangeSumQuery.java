@@ -1,4 +1,4 @@
-package array;
+package string.array;
 
 /**
  * Created by az on 9/23/2019.

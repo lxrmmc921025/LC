@@ -1,4 +1,4 @@
-package interval;
+package string.interval;
 
 import java.util.*;
 
@@ -25,7 +25,7 @@ public class meetingRooms {
     }
 
     //LC 253 medium - 494
-    //M1: sort - using 【array】 to implement
+    //M1: sort - using 【string.array】 to implement
     //T : O(nlgn) S : O(n)
     //https://leetcode.com/problems/meeting-rooms-ii/discuss/67855/Explanation-of-%22Super-Easy-Java-Solution-Beats-98.8%22-from-%40pinkfloyda
     //easy and smart, hard to explain and understand
@@ -83,7 +83,7 @@ public class meetingRooms {
 
     //M3: Sweep Line -- using 【Map】 to implement
     //T : O(nlgn) S : O(n);
-    //how to think : consider "sweep line" is array(treemap here), "event start" means + 1, "event close" means - 1,
+    //how to think : consider "sweep line" is string.array(treemap here), "event start" means + 1, "event close" means - 1,
     //track how many event is in progress at the same time.
     public int minMeetingRooms3(int[][] intervals) {
         Map<Integer, Integer> record = new TreeMap<>();

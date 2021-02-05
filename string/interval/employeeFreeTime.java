@@ -10,7 +10,8 @@ import java.util.PriorityQueue;
  */
 public class employeeFreeTime {
     //LC 759 hard
-    //M1: Sort
+    //Similiar to 57 merge interval, opposite
+    //M1: Sort -- using PQ
     //https://leetcode.com/problems/employee-free-time/discuss/113134/Simple-Java-Sort-Solution-Using-(Priority-Queue)-or-Just-ArrayList
     public List<Interval> employeeFreeTime1(List<Interval> avail) {
         List<Interval> res = new ArrayList<>();
@@ -30,7 +31,7 @@ public class employeeFreeTime {
         return res;
     }
 
-    //M2: Sweep Line
+    //M2: Sort -- using string.array
     //https://leetcode.com/problems/employee-free-time/discuss/113134/Simple-Java-Sort-Solution-Using-(Priority-Queue)-or-Just-ArrayList
     public List<Interval> employeeFreeTime2(List<List<Interval>> avails) {
         List<Interval> res = new ArrayList<>();

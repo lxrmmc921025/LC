@@ -34,7 +34,7 @@ public class mergeIntervals {
                 res.add(interval);
             }
         }
-        //convert List to array : return result.toArray(new int[result.size()][]);
+        //convert List to string.array : return result.toArray(new int[result.size()][]);
         return res.stream().toArray(int[][]::new);
     }
 
